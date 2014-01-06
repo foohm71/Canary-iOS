@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Lord of the flies</key>
+	<string>William Golding</string>
+	<key>The catcher in the rye</key>
+	<string>J. D. Salinger</string>
+	<key>To kill a mockingbird</key>
+	<string>Harper Lee</string>
+	<key>The lord of the rings</key>
+	<string>J. R. R. Tolkien</string>
+	<key>Pride and prejudice</key>
+	<string>Jane Austen</string>
+	<key>The art of war</key>
+	<string>Sun Tzu</string>
+	<key>You only live twice</key>
+	<string>Ian Fleming</string>
+	<key>The beautiful ones are not yet born</key>
+	<string>Ayi Kwei Armah</string>
+	<key>Things fall apart</key>
+	<string>Chinua Achebe</string>
+	<key>The great Gatsby</key>
+	<string>F. Scott Fitzgerald</string>
+	<key>A tale of two cities</key>
+	<string>Charles Dickens</string>
+	<key>The Three Musketeers</key>
+	<string>Alexendre Dumas</string>
+	<key>Animal Farm</key>
+	<string>George Orwell</string>
+	<key>1984</key>
+	<string>George Orwell</string>
+	<key>Twelth Night</key>
+	<string>William Shakespere</string>
+	<key>The Mayor of Casterbridge</key>
+	<string>Thomas Hardy</string>
+</dict>
+</plist>

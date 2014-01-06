@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414AFB32186CCC1000D503D4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414AFB30186CCC1000D503D4 /* SecondViewController.m */; };
+		414AFB35186D0C6600D503D4 /* books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414AFB34186D0C6600D503D4 /* books.plist */; };
+		414AFB36186D0C6600D503D4 /* books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414AFB34186D0C6600D503D4 /* books.plist */; };
+		414AFB39186D14B700D503D4 /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 414AFB38186D14B700D503D4 /* Books.m */; };
+		414AFB3A186D14B700D503D4 /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 414AFB38186D14B700D503D4 /* Books.m */; };
 		4179E57B186A116C002AF54E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57A186A116C002AF54E /* Foundation.framework */; };
 		4179E57D186A116C002AF54E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57C186A116C002AF54E /* CoreGraphics.framework */; };
 		4179E57F186A116C002AF54E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57E186A116C002AF54E /* UIKit.framework */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		414AFB2F186CCC1000D503D4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		414AFB30186CCC1000D503D4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		414AFB34186D0C6600D503D4 /* books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = books.plist; sourceTree = "<group>"; };
+		414AFB37186D14B700D503D4 /* Books.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Books.h; sourceTree = "<group>"; };
+		414AFB38186D14B700D503D4 /* Books.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Books.m; sourceTree = "<group>"; };
 		4179E577186A116C002AF54E /* Canary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4179E57A186A116C002AF54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4179E57C186A116C002AF54E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,9 +127,13 @@
 				4179E589186A116C002AF54E /* AppDelegate.h */,
 				4179E58A186A116C002AF54E /* AppDelegate.m */,
 				4179E58C186A116C002AF54E /* Main_iPhone.storyboard */,
+				414AFB2F186CCC1000D503D4 /* SecondViewController.h */,
+				414AFB30186CCC1000D503D4 /* SecondViewController.m */,
 				4179E58F186A116C002AF54E /* Main_iPad.storyboard */,
 				4179E592186A116C002AF54E /* ViewController.h */,
 				4179E593186A116C002AF54E /* ViewController.m */,
+				414AFB37186D14B700D503D4 /* Books.h */,
+				414AFB38186D14B700D503D4 /* Books.m */,
 				4179E595186A116C002AF54E /* Images.xcassets */,
 				4179E581186A116C002AF54E /* Supporting Files */,
 			);
@@ -130,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4179E582186A116C002AF54E /* Canary-Info.plist */,
+				414AFB34186D0C6600D503D4 /* books.plist */,
 				4179E583186A116C002AF54E /* InfoPlist.strings */,
 				4179E586186A116C002AF54E /* main.m */,
 				4179E588186A116C002AF54E /* Canary-Prefix.pch */,
@@ -235,6 +250,7 @@
 				4179E596186A116C002AF54E /* Images.xcassets in Resources */,
 				4179E58E186A116C002AF54E /* Main_iPhone.storyboard in Resources */,
 				4179E585186A116C002AF54E /* InfoPlist.strings in Resources */,
+				414AFB35186D0C6600D503D4 /* books.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4179E5A7186A116C002AF54E /* InfoPlist.strings in Resources */,
+				414AFB36186D0C6600D503D4 /* books.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414AFB32186CCC1000D503D4 /* SecondViewController.m in Sources */,
+				414AFB39186D14B700D503D4 /* Books.m in Sources */,
 				4179E594186A116C002AF54E /* ViewController.m in Sources */,
 				4179E58B186A116C002AF54E /* AppDelegate.m in Sources */,
 				4179E587186A116C002AF54E /* main.m in Sources */,
@@ -263,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414AFB3A186D14B700D503D4 /* Books.m in Sources */,
 				4179E5A9186A116C002AF54E /* CanaryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +494,7 @@
 				4179E5AE186A116C002AF54E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4179E5AF186A116C002AF54E /* Build configuration list for PBXNativeTarget "CanaryTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +503,7 @@
 				4179E5B1186A116C002AF54E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
