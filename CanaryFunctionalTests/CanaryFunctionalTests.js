@@ -29,8 +29,48 @@ test("TC0.1 - Gettting some device information", function(target, application) {
    UIALogger.logMessage("The name of the device is " +target.name());
 });
 
-//TC02 - No device name
-test("TC02 - Switch to Books View", function(target, application) {
+//TC01 - Text to be modified
+test("TC01 - Text to be modified", function(target, application) {
+    logElementTree();	 
+	delay(1);
+    window.textFields()[0].tap();
+    delay(1);
+    application.keyboard().typeString("hello world");
+    application.keyboard().typeString("\n");
+	delay(1); 
+	window.buttons()["modifyTextButton"].tap(); 
+	delay(2); 
+	UIALogger.logMessage("Text is " + window.staticTexts()["simpleLabel"].text); // need to figure out how to get the text
+	 
+});	 
+
+//TC02 - Text to be modified - idiot
+test("TC02 - Text to be modified", function(target, application) {
+    // logElementTree();	 
+	delay(1);
+    window.textFields()[0].tap();
+    delay(1);
+    application.keyboard().typeString("don't be an idiot!");
+    application.keyboard().typeString("\n");
+	delay(1); 
+	window.buttons()["modifyTextButton"].tap(); 
+	delay(2); 
+	logElementTree();
+	if (application.alert().scrollViews()[0].staticTexts()["Actung!"].isValid()) { 
+		application.alert().buttons()["OK"].tap(); 
+	 	UIALogger.logPass("Alert showed up");
+	 
+	} else {
+	 	UIALogger.logFail("Alert failed to show up");	 
+	}
+	 
+	UIALogger.logMessage("Text is " + window.staticTexts()["simpleLabel"].text); // need to figure out how to get the text
+	 
+});	 
+
+
+//TC03 - Switch to Books View
+test("TC03 - Switch to Books View", function(target, application) {
 	 delay(1);
 	 UIALogger.logMessage("Tapping on the 'Switch View' button");
 	 window.buttons()["Switch View"].tap();
@@ -44,3 +84,17 @@ test("TC02 - Switch to Books View", function(target, application) {
 	 }
 	 
 });
+
+//TC05 - Switch to Books View
+test("TC05 - Switch back to Main View", function(target, application) {
+	 delay(1);
+	 UIALogger.logMessage("Tapping on the 'Canary' button");
+	 application.navigationBar().buttons()[0].tap();
+	 delay(1);
+	 if (application.navigationBar().name() == "Canary") {
+	 	UIALogger.logPass("Main page loaded");
+	 } else {
+	 	UIALogger.logFail("Main page did not load");
+	 }	 
+});
+

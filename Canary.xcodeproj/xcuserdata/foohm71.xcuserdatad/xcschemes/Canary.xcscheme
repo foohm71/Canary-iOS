@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Canary.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "41D52C3C18899F4C0082F2D2"
+               BuildableName = "CanaryOCUnitTests.octest"
+               BlueprintName = "CanaryOCUnitTests"
+               ReferencedContainer = "container:Canary.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -22,15 +22,27 @@
 		4179E591186A116C002AF54E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4179E58F186A116C002AF54E /* Main_iPad.storyboard */; };
 		4179E594186A116C002AF54E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4179E593186A116C002AF54E /* ViewController.m */; };
 		4179E596186A116C002AF54E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4179E595186A116C002AF54E /* Images.xcassets */; };
-		4179E59D186A116C002AF54E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E59C186A116C002AF54E /* XCTest.framework */; };
 		4179E59E186A116C002AF54E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57A186A116C002AF54E /* Foundation.framework */; };
 		4179E59F186A116C002AF54E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57E186A116C002AF54E /* UIKit.framework */; };
 		4179E5A7186A116C002AF54E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4179E5A5186A116C002AF54E /* InfoPlist.strings */; };
 		4179E5A9186A116C002AF54E /* CanaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4179E5A8186A116C002AF54E /* CanaryTests.m */; };
+		41D52C381888BB170082F2D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E59C186A116C002AF54E /* XCTest.framework */; };
+		41D52C3E18899F4D0082F2D2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D52C33188886F70082F2D2 /* SenTestingKit.framework */; };
+		41D52C3F18899F4D0082F2D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57A186A116C002AF54E /* Foundation.framework */; };
+		41D52C4018899F4D0082F2D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179E57E186A116C002AF54E /* UIKit.framework */; };
+		41D52C4618899F4D0082F2D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D52C4418899F4D0082F2D2 /* InfoPlist.strings */; };
+		41D52C4818899F4D0082F2D2 /* CanaryOCUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D52C4718899F4D0082F2D2 /* CanaryOCUnitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4179E5A0186A116C002AF54E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4179E56F186A116C002AF54E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4179E576186A116C002AF54E;
+			remoteInfo = Canary;
+		};
+		41D52C4A18899F4D0082F2D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4179E56F186A116C002AF54E /* Project object */;
 			proxyType = 1;
@@ -65,6 +77,12 @@
 		4179E5A4186A116C002AF54E /* CanaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanaryTests-Info.plist"; sourceTree = "<group>"; };
 		4179E5A6186A116C002AF54E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4179E5A8186A116C002AF54E /* CanaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanaryTests.m; sourceTree = "<group>"; };
+		41D52C33188886F70082F2D2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		41D52C3D18899F4D0082F2D2 /* CanaryOCUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryOCUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D52C4318899F4D0082F2D2 /* CanaryOCUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanaryOCUnitTests-Info.plist"; sourceTree = "<group>"; };
+		41D52C4518899F4D0082F2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		41D52C4718899F4D0082F2D2 /* CanaryOCUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanaryOCUnitTests.m; sourceTree = "<group>"; };
+		41D52C4918899F4D0082F2D2 /* CanaryOCUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CanaryOCUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +100,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4179E59D186A116C002AF54E /* XCTest.framework in Frameworks */,
+				41D52C381888BB170082F2D2 /* XCTest.framework in Frameworks */,
 				4179E59F186A116C002AF54E /* UIKit.framework in Frameworks */,
 				4179E59E186A116C002AF54E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D52C3A18899F4C0082F2D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D52C3E18899F4D0082F2D2 /* SenTestingKit.framework in Frameworks */,
+				41D52C4018899F4D0082F2D2 /* UIKit.framework in Frameworks */,
+				41D52C3F18899F4D0082F2D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +124,7 @@
 			children = (
 				4179E580186A116C002AF54E /* Canary */,
 				4179E5A2186A116C002AF54E /* CanaryTests */,
+				41D52C4118899F4D0082F2D2 /* CanaryOCUnitTests */,
 				4179E579186A116C002AF54E /* Frameworks */,
 				4179E578186A116C002AF54E /* Products */,
 			);
@@ -106,6 +135,7 @@
 			children = (
 				4179E577186A116C002AF54E /* Canary.app */,
 				4179E59B186A116C002AF54E /* CanaryTests.xctest */,
+				41D52C3D18899F4D0082F2D2 /* CanaryOCUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +143,7 @@
 		4179E579186A116C002AF54E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41D52C33188886F70082F2D2 /* SenTestingKit.framework */,
 				4179E57A186A116C002AF54E /* Foundation.framework */,
 				4179E57C186A116C002AF54E /* CoreGraphics.framework */,
 				4179E57E186A116C002AF54E /* UIKit.framework */,
@@ -170,6 +201,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		41D52C4118899F4D0082F2D2 /* CanaryOCUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				41D52C4718899F4D0082F2D2 /* CanaryOCUnitTests.m */,
+				41D52C4218899F4D0082F2D2 /* Supporting Files */,
+			);
+			path = CanaryOCUnitTests;
+			sourceTree = "<group>";
+		};
+		41D52C4218899F4D0082F2D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41D52C4318899F4D0082F2D2 /* CanaryOCUnitTests-Info.plist */,
+				41D52C4418899F4D0082F2D2 /* InfoPlist.strings */,
+				41D52C4918899F4D0082F2D2 /* CanaryOCUnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +258,24 @@
 			productReference = 4179E59B186A116C002AF54E /* CanaryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		41D52C3C18899F4C0082F2D2 /* CanaryOCUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D52C4C18899F4D0082F2D2 /* Build configuration list for PBXNativeTarget "CanaryOCUnitTests" */;
+			buildPhases = (
+				41D52C3918899F4C0082F2D2 /* Sources */,
+				41D52C3A18899F4C0082F2D2 /* Frameworks */,
+				41D52C3B18899F4C0082F2D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41D52C4B18899F4D0082F2D2 /* PBXTargetDependency */,
+			);
+			name = CanaryOCUnitTests;
+			productName = CanaryOCUnitTests;
+			productReference = 41D52C3D18899F4D0082F2D2 /* CanaryOCUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,6 +286,9 @@
 				ORGANIZATIONNAME = "Chris Foo";
 				TargetAttributes = {
 					4179E59A186A116C002AF54E = {
+						TestTargetID = 4179E576186A116C002AF54E;
+					};
+					41D52C3C18899F4C0082F2D2 = {
 						TestTargetID = 4179E576186A116C002AF54E;
 					};
 				};
@@ -237,6 +308,7 @@
 			targets = (
 				4179E576186A116C002AF54E /* Canary */,
 				4179E59A186A116C002AF54E /* CanaryTests */,
+				41D52C3C18899F4C0082F2D2 /* CanaryOCUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +332,14 @@
 			files = (
 				4179E5A7186A116C002AF54E /* InfoPlist.strings in Resources */,
 				414AFB36186D0C6600D503D4 /* books.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D52C3B18899F4C0082F2D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D52C4618899F4D0082F2D2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41D52C3918899F4C0082F2D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D52C4818899F4D0082F2D2 /* CanaryOCUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = 4179E576186A116C002AF54E /* Canary */;
 			targetProxy = 4179E5A0186A116C002AF54E /* PBXContainerItemProxy */;
+		};
+		41D52C4B18899F4D0082F2D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4179E576186A116C002AF54E /* Canary */;
+			targetProxy = 41D52C4A18899F4D0082F2D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,6 +419,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4179E5A6186A116C002AF54E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		41D52C4418899F4D0082F2D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D52C4518899F4D0082F2D2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -412,6 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Canary/Canary-Prefix.pch";
 				INFOPLIST_FILE = "Canary/Canary-Info.plist";
@@ -425,6 +530,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Canary/Canary-Prefix.pch";
 				INFOPLIST_FILE = "Canary/Canary-Info.plist";
@@ -450,6 +559,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "CanaryTests/CanaryTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -469,9 +582,55 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Canary/Canary-Prefix.pch";
 				INFOPLIST_FILE = "CanaryTests/CanaryTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		41D52C4D18899F4D0082F2D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Canary.app/Canary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CanaryOCUnitTests/CanaryOCUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CanaryOCUnitTests/CanaryOCUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		41D52C4E18899F4D0082F2D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Canary.app/Canary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CanaryOCUnitTests/CanaryOCUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "CanaryOCUnitTests/CanaryOCUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -504,6 +663,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		41D52C4C18899F4D0082F2D2 /* Build configuration list for PBXNativeTarget "CanaryOCUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D52C4D18899F4D0082F2D2 /* Debug */,
+				41D52C4E18899F4D0082F2D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
